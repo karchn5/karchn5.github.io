@@ -29,7 +29,7 @@
 
 	<div class="intro">
 		<h1>Hi, Kara Chen here.</h1>
-		<h2>I design and develop ideas! Wow so coool</h2>
+		<h2>I am a designer looking for opportunities to learn and grow!</h2>
 		<!-- <p>Currently a Cognitive Science student at UCSD, I strive to better experiences by implementing user perspective into my designs.</p> -->
 	</div>
 
@@ -64,7 +64,7 @@
 
 	<div>
 		<footer>
-			© 2019 Kara Chen. All Rights Reserved.
+			© 2020 Kara Chen. All Rights Reserved.
 		</footer>
 	</div>
 
