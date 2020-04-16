@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: rgb(241, 241, 241);
+    font-family: 'Raleway', sans-serif;
 }
 
 nav {
@@ -9,14 +10,12 @@ nav {
     margin: 1em;
 }
 
-
 .about {
     display: flex;
-    height: 500hv;
 }
 
 .intro {
-    padding-top: 25%;
+    padding-top: 23%;
     width: 33%;
     height: 100%;
     margin: auto;
@@ -30,10 +29,20 @@ nav {
     left: 0;
 }
 
+.intro h1 {
+    margin: .25em;
+}
+
+.intro h2 {
+    margin-bottom: 3em;
+    font-size: 18px;
+}
+
 .projects {
     width: 67%;
     height: 100%;
     background-color: rgb(241, 241, 241);
+    padding-top: 3em;
     position: relative;
     top: 0;
     right: 0;
@@ -42,5 +51,39 @@ nav {
 }
 
 .project {
-    padding-left: 10%;
+    padding-left: 23%;
+    padding-bottom: 2em;
+}
+
+.proj_title {
+    display: inline-block;
+    font-weight: 900;
+}
+
+.proj_sub {
+    display: inline-block;
+    margin-left: .5em;
+    color: grey;
+    font-size: 18px;
+}
+
+.proj_img {
+    display: block;
+    height: 350px;
+    width: 600px;
+}
+
+.readbutton {
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    padding: .4em;
+    display: inline-block;
+    margin-left: 9.5em;
+    border-radius: 10%;
+}
+
+.tags {
+    color: grey;
+    display: inline-flex;
 }
