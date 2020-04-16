@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    height: 118px;
+    text-align: left;
+    
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+nav {
+    text-align: right;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+ color: rgb(65, 156, 209);
+}
+
+nav a {
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h1 {
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+    font-size: 50px;
+    color: rgb(94, 169, 219);
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(94, 169, 219)
+}
+
+p {
+    color: rgb(94, 94, 94);
+}
+
+.container { 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+
+}
+
+.header {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.intro {
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+.projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 150px;
+    grid-column-gap: 50px;
+}
+
