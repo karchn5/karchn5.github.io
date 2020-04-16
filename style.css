@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+
+.about {
+    display: flex;
+    height: 500hv;
+}
+
+.intro {
+    padding-top: 25%;
+    width: 33%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.projects {
+    width: 67%;
+    height: 100%;
+    background-color: rgb(241, 241, 241);
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: 33%;
+
+}
+
+.project {
+    padding-left: 10%;
+}
