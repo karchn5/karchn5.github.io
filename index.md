@@ -30,7 +30,7 @@
 
 	<div class="intro">
 		<h1>Hi, Kara Chen here.</h1>
-		<h2>I design and develop ideas to improve the user experience.</h2>
+		<h2>I design and develop ideas! Wow so coool</h2>
 		<!-- <p>Currently a Cognitive Science student at UCSD, I strive to better experiences by implementing user perspective into my designs.</p> -->
 	</div>
 
