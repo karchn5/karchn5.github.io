@@ -65,18 +65,20 @@ footer {
 }
 
 .project {
-    padding-left: 23%;
+    padding-left: 20%;
     padding-top: 6em;
 }
 
 .proj_title {
     display: inline-block;
     font-weight: 900;
+    margin-bottom: .3em;
 }
 
 .proj_sub {
     display: inline-block;
     margin-left: .5em;
+    margin-bottom: .3em;
     color: grey;
     font-size: 18px;
 }
