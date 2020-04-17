@@ -10,6 +10,19 @@ nav {
     margin: 1em;
 }
 
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+footer {
+    padding-top: 6em;
+}
+
 .about {
     display: flex;
 }
@@ -30,19 +43,20 @@ nav {
 }
 
 .intro h1 {
-    margin: .25em;
+    margin: .1em;
 }
 
 .intro h2 {
+    margin-top: .1em;
     margin-bottom: 3em;
     font-size: 18px;
+    color: grey;
 }
 
 .projects {
     width: 67%;
     height: 100%;
     background-color: rgb(241, 241, 241);
-    padding-top: 3em;
     position: relative;
     top: 0;
     right: 0;
@@ -52,7 +66,7 @@ nav {
 
 .project {
     padding-left: 23%;
-    padding-bottom: 2em;
+    padding-top: 6em;
 }
 
 .proj_title {
