@@ -67,7 +67,9 @@ footer {
   /* Toggle show/hide menu on checkbox click */
   #page-nav ul {
     display: none;
+    font-size: 12px;
   }
+
   #page-nav input:checked ~ ul {
     display: block;
     animation: transitionIn 1s;
@@ -107,6 +109,10 @@ footer {
     max-width: 100%;
 }
 
+.proj_img:hover {
+    opacity: 65%;
+}
+
 .readbutton {
     animation: transitionIn 1.5s;
     background-color:grey;
@@ -121,6 +127,11 @@ footer {
     margin-top: .5em;
 }
 
+.readbutton:hover {
+    background-color:rgb(54, 87, 136);
+    color: white;
+}
+
 .tags {
     font-weight: 400;
     font-size: 12px;
@@ -129,6 +140,11 @@ footer {
     margin-left: .5em;
 }
 
+#tag-icon {
+    height: 15px;
+    margin-right: .25em;
+    opacity: 50%;
+}
 
 
 /* about me page */
@@ -157,17 +173,35 @@ footer {
 
 /* graphics */
 
-.graphics_display {
-    width: 50%;
-    justify-content: center;
-    margin: 5em auto;
-    display: inline-block;
+.graphics {
+    margin: 5em;
+    display: inline-flex;
+}
+
+.graphics img{
+    max-height: 650px;
+    width: 100%;
+    margin-right: 2em;
+}
+
+.logo {
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.squarepic {
+    max-width: 650px;
+    object-fit: cover;
 }
 
 /* case study */
 
 .casestudy {
     margin: 3em 25%;
+}
+
+.casestudy img {
+    max-width: 100%;
 }
 
 /* animations */
@@ -181,6 +215,7 @@ footer {
         transform: rotateX(0);
     }
 }
+
 
 @media only screen and (min-width: 768px) {
     .intro {
@@ -267,8 +302,17 @@ footer {
         color:black;
         font-style: normal;
         font-size: 5em;
-
       }
+
+    #page-nav ul {
+        display: none;
+        font-size: 18px;
+      }
+
+    #tag-icon {
+        height: 18px;
+      }
+
 
 }
 
@@ -454,6 +498,10 @@ footer {
 
       footer {
           padding-top: 0em;
+      }
+
+      #tag-icon {
+        height: 20px;
       }
     
 }
