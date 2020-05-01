@@ -204,6 +204,13 @@ footer {
     max-width: 100%;
 }
 
+.caseimage {
+    box-shadow: 0px 0px 5px grey;
+    width: 45%;
+    display: inline-flex;
+    margin-left: 1%;
+}
+
 /* animations */
 @keyframes transitionIn {
     from {
@@ -476,7 +483,7 @@ footer {
       #page-nav ul li {
         display: block;
         text-align: center;
-        margin: 0em;
+        margin: .5em 0em;
       }
       #page-nav ul li {
         /* border-top: 1px solid #333; */
