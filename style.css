@@ -222,6 +222,10 @@ footer {
     margin: 1em 0 1em 0;
 }
 
+.casestudy li {
+    line-height: 1.6;
+}
+
 .casestudy-section {
     margin-bottom: 4em;
 }
