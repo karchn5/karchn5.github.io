@@ -275,6 +275,10 @@ footer {
     width: calc((100% - 2 * 3em) / 3); 
 }
 
+.fullwidth {
+    width: 100%;
+}
+
 /* .row .col-1-of-2 {
     width: calc((100% - 1 * 3em) / 2); 
 } */
