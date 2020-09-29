@@ -1,0 +1,593 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+footer {
+    padding-top: 6em;
+}
+
+
+.intro {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    padding: .75em;
+    font-size: 8px;
+}
+
+.intro h1{
+    margin-left: .5em;
+}
+
+.intro h2{
+    display: none;
+}
+
+.intro p {
+    display: none;
+}
+
+#page-nav label, #hamburger {
+    display: none;
+  }
+
+#page-nav label {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    color:black;
+    font-style: normal;
+    font-size: 2.5em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    display: block;
+    text-align: right;
+    margin: 1em 3em 1em 1em;
+  }
+  #page-nav ul li {
+    /* border-top: 1px solid #333; */
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+    font-size: 12px;
+  }
+
+  #page-nav input:checked ~ ul {
+    display: block;
+    animation: transitionIn 1s;
+  }
+
+.projects {
+    animation: transitionIn 1s;
+    margin: auto;
+    padding-top: 3em;
+}
+
+.project {
+    padding-top: 1em;
+}
+
+.proj_title {
+    animation: transitionIn 1.5s;
+    display: inline-block;
+    font-weight: 900;
+    margin-bottom: .3em;
+    margin-left: .5em;
+    font-size: 18px;
+}
+
+.proj_sub {
+    animation: transitionIn 1.5s;
+    display: inline-block;
+    margin-left: .5em;
+    margin-bottom: .3em;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.proj_img {
+    animation: transitionIn 0.75s;
+    display: block;
+    max-width: 100%;
+}
+
+.proj_img:hover {
+    opacity: 65%;
+}
+
+.readbutton {
+    animation: transitionIn 1.5s;
+    background-color:grey;
+    text-decoration: none;
+    color: white;
+    padding: .4em;
+    float: right;
+    margin-right: .5em;
+    border-radius: 5%;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: .5em;
+}
+
+.readbutton:hover {
+    background-color:rgb(54, 87, 136);
+    color: white;
+}
+
+.tags {
+    font-weight: 400;
+    font-size: 12px;
+    display: inline-flex;
+    animation: transitionIn 1.5s;
+    margin-left: .5em;
+}
+
+#tag-icon {
+    height: 15px;
+    margin-right: .25em;
+    opacity: 50%;
+}
+
+
+/* about me page */
+
+.about {
+    justify-content: center;
+    margin: 10em auto;
+}
+
+.aboutme {
+    background-color: white;
+    padding: 1.5em;
+    width: 40%;
+    display: inline-block;
+
+}
+
+.about_img {
+    display: inline-block;
+    height: 30em;
+    width: 20em;
+    border-color: white;
+    border-style: solid;
+    border-width: 1em;
+}
+
+/* graphics */
+
+.graphics {
+    margin: 5em;
+    display: inline-flex;
+}
+
+.graphics img{
+    max-height: 650px;
+    width: 100%;
+    margin-right: 2em;
+}
+
+.logo {
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.squarepic {
+    max-width: 650px;
+    object-fit: cover;
+}
+
+/* case study */
+
+.casestudy {
+    margin: 3em 20%;
+}
+
+.casestudy h1 {
+    margin: 0;
+    text-transform: capitalize;
+    color: rgb(230, 77, 128);
+}
+
+.casestudy h2 {
+    margin: 0;
+    text-transform: capitalize;
+    color: rgb(230, 77, 128);
+}
+
+.casestudy h3 {
+    text-decoration: underline;
+}
+
+.casestudy p {
+    line-height: 1.6;
+    margin: 1em 0 1em 0;
+}
+
+.casestudy li {
+    line-height: 1.6;
+}
+
+.casestudy-section {
+    margin-bottom: 4em;
+}
+
+.casestudy img {
+    margin: 1em 0 1em 0;
+    width: 100%;
+}
+
+.casestudy-img {
+    margin: 1em 0 1em 0;
+    width: 100%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-bottom-med {
+    margin-bottom: 5em;
+}
+
+.limit-width {
+    max-width: 70%;
+    overflow: hidden;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.column-2 {
+    display: inline-flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 2.5em;
+}
+
+.row [class^="col-"]:not(:last-child) {
+    margin-right: 2em; }
+
+.row .col-1-of-3 {
+    width: calc((100% - 2 * 3em) / 3); 
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+/* .row .col-1-of-2 {
+    width: calc((100% - 1 * 3em) / 2); 
+} */
+
+/* .caseimage {
+    box-shadow: 0px 0px 5px grey;
+    width: 45%;
+    display: inline-flex;
+    margin-left: 1%;
+} */
+
+/* animations */
+@keyframes transitionIn {
+    from {
+        opacity:0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .intro {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        padding: .75em;
+        font-size: 8px;
+    }
+    
+    .intro h1{
+        margin-left: .5em;
+        font-size: 24px;
+    }
+    
+    .intro h2{
+        display: none;
+    }
+    
+    .intro p {
+        display: none;
+    }
+
+    .projects {
+        animation: transitionIn 1s;
+        margin: auto;
+        padding: 5em 5em 0em 5em;
+    }
+    
+    .project {
+        padding-top: 3em;
+    }
+    
+    .proj_title {
+        animation: transitionIn 1.5s;
+        display: inline-block;
+        font-weight: 900;
+        margin-bottom: .5em;
+        margin-left: 0em;
+        font-size: 24px;
+    }
+    
+    .proj_sub {
+        animation: transitionIn 1.5s;
+        display: inline-block;
+        margin-left: .5em;
+        margin-bottom: .3em;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .proj_img {
+        animation: transitionIn 0.75s;
+        display: block;
+        max-width: 100%;
+    }
+    
+    .readbutton {
+        animation: transitionIn 1.5s;
+        background-color:grey;
+        text-decoration: none;
+        color: white;
+        padding: .4em;
+        float: right;
+        margin-right: 0em;
+        border-radius: 5%;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: .5em;
+    }
+    
+    .tags {
+        font-weight: 400;
+        font-size: 18px;
+        display: inline-flex;
+        animation: transitionIn 1.5s;
+        margin-left: 0em;
+    }
+
+    #page-nav label {
+        top: 0;
+        right: .75em;
+        color:black;
+        font-style: normal;
+        font-size: 5em;
+      }
+
+    #page-nav ul {
+        display: none;
+        font-size: 18px;
+      }
+
+    #tag-icon {
+        height: 18px;
+      }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Raleway', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    a {
+        text-decoration: underline;
+        color: black;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .intro {
+        padding-top: 18%;
+        width: 33%;
+        height: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-left: 0em;
+    }
+
+    .intro h1 {
+        margin: 0em;
+        font-size: 36px;
+    }
+
+    .intro h2 {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        font-size: 18px;
+        font-weight: 400;
+        display: block;
+    }
+
+    .intro p {
+        display: block;
+        margin: 1em 2em 1em 2em;
+        font-weight: 600;
+        border-style: solid;
+        border-width: 1px;
+        padding: 1em;
+        border-color: grey;
+        text-align: left;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .intro a {
+        margin-bottom: .25em;
+    }
+
+    .blue {
+        color: rgb(21, 89, 190);
+    }
+
+    .projects {
+        animation: transitionIn 1s;
+        height: 100%;
+        background-color: rgb(245, 245, 245);
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-left: 33%;
+
+    }
+
+    .project {
+        padding-left: 5%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .proj_title {
+        animation: transitionIn 1.5s;
+        display: inline-block;
+        font-weight: 900;
+        margin-bottom: .3em;
+        margin-left: 0em;
+        font-size: 24px;
+    }
+
+    .proj_sub {
+        animation: transitionIn 1.5s;
+        display: inline-block;
+        margin-left: .5em;
+        margin-bottom: .3em;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .proj_img {
+        animation: transitionIn 0.75s;
+        display: block;
+        max-width: 100%;
+    }
+
+    .readbutton {
+        animation: transitionIn 1.5s;
+        background-color:grey;
+        text-decoration: none;
+        color: white;
+        padding: .5em;
+        border-radius: 5%;
+
+        position: relative;
+        right: 0%;
+        border-radius: 5%;
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: .75em;
+    }
+
+    .tags {
+        font-weight: 400;
+        font-size: 18px;
+        display: inline-flex;
+        animation: transitionIn 1.5s;
+        margin-left: 0em;
+    }
+
+    #page-nav label, #hamburger {
+        display: none;
+      }
+    
+    #page-nav label {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color:black;
+        font-style: normal;
+        font-size: 2.5em;
+        /* padding: 10px; */
+      }
+    
+      /* Break down menu items into vertical */
+      #page-nav ul li {
+        display: block;
+        text-align: center;
+        margin: .5em 0em;
+      }
+      #page-nav ul li {
+        /* border-top: 1px solid #333; */
+      }
+    
+      /* Toggle show/hide menu on checkbox click */
+      #page-nav ul {
+        display: block;
+        animation: transitionIn 1s;
+      }
+      #page-nav input:checked ~ ul {
+        display: block;
+        animation: transitionIn 1s;
+      }
+
+      ul {
+        padding-inline-start: 0px;
+      }
+
+      footer {
+          padding-top: 0em;
+      }
+
+      #tag-icon {
+        height: 20px;
+      }
+    
+}

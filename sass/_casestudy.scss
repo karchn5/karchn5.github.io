@@ -1,0 +1,95 @@
+//fraise case study
+
+.casestudy h1 {
+    margin: 0;
+    text-transform: capitalize;
+    color: rgb(230, 77, 128);
+}
+
+.casestudy h2 {
+    margin: 0;
+    text-transform: capitalize;
+    color: rgb(230, 77, 128);
+}
+
+.casestudy h3 {
+    text-decoration: underline;
+}
+
+.casestudy p {
+    line-height: 1.6;
+    margin: 1em 0 1em 0;
+}
+
+.casestudy li {
+    line-height: 1.6;
+}
+
+.casestudy-section {
+    margin-bottom: 4em;
+}
+
+.casestudy img {
+    margin: 1em 0 1em 0;
+    width: 100%;
+}
+
+.casestudy-img {
+    margin: 1em 0 1em 0;
+    width: 100%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-bottom-med {
+    margin-bottom: 5em;
+}
+
+.limit-width {
+    max-width: 70%;
+    overflow: hidden;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.column-2 {
+    display: inline-flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 2.5em;
+}
+
+.row [class^="col-"]:not(:last-child) {
+    margin-right: 2em; }
+
+.row .col-1-of-3 {
+    width: calc((100% - 2 * 3em) / 3); 
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.fraise {
+    color: $color-fraise;
+}
+
+//new casestudy code
+
+.casestudy {
+    grid-row: 1 / -1;
+    grid-column: 3 / 7;
+    padding: 8rem 8rem;
+    font-size: 1.5rem;
+    background-color: $color-grey-bg;
+    width: 100%;
+    height: 100%;
+}
