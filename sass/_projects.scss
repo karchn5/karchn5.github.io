@@ -41,7 +41,7 @@
 
     &__text {
         position: absolute;
-        margin-left: 45%;
+        margin-left: 50%;
         flex-direction: column;
         top: 50%;
         transform: translateY(-50%);
@@ -110,4 +110,14 @@
     height: 1.5rem;
     margin-right: .5rem;
     opacity: 50%;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: transform .75s;
+}
+
+.project__button:hover {
+    color: $color-black;
+    background-color: $color-white;
 }

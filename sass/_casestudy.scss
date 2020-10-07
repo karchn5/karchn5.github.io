@@ -7,23 +7,20 @@
 }
 
 .casestudy h2 {
-    margin: 0;
+    margin-top: 4rem;
     text-transform: capitalize;
     color: rgb(230, 77, 128);
 }
 
 .casestudy p {
     line-height: 1.6;
-    margin: 1em 0 1em 0;
+    margin: 1rem 0 1rem 0;
 }
 
 .casestudy li {
     line-height: 1.6;
 }
 
-.casestudy-section {
-    margin-bottom: 4em;
-}
 
 .casestudy img {
     margin: 1em 0 1em 0;
@@ -77,6 +74,10 @@
 .fraise {
     color: $color-fraise;
 }
+.pink {
+    color: $color-fraise;
+    border: 1px solid $color-fraise;
+}
 
 .blue{
     color: $color-blue !important; 
@@ -107,5 +108,6 @@
         font-size: 1.8rem;
         font-weight: 500;
         text-decoration: underline;
+        margin-top: 3rem;
     }
 }

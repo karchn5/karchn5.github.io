@@ -107,6 +107,18 @@
     }
 }
 
+.intro__btn-pink {
+    margin-top: 4rem;
+    display: inline-block;
+        color: $color-fraise;
+        text-decoration: none;
+        background-color: $color-white;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        border: 1px solid $color-fraise;
+        font-size: 1.2rem;
+}
+
 .intro__nav label, #hamburger {
     display: none;
   }
@@ -176,4 +188,14 @@
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.intro__btn:hover {
+    color: white;
+    background-color: $color-blue;
+}
+
+.intro__btn-pink:hover {
+    color: white;
+    background-color: $color-fraise;
 }
