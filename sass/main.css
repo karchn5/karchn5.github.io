@@ -302,8 +302,8 @@ body {
   background-color: #f1f1f1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (50vh)[4];
-      grid-template-rows: repeat(4, 50vh);
+  -ms-grid-rows: (50vh)[5];
+      grid-template-rows: repeat(5, 50vh);
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
