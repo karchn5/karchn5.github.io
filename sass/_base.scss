@@ -6,6 +6,8 @@ $color-grey-bg: rgba(241, 241, 241, 1);
 $color-greyblue: rgba(100, 120, 138, 1);
 $color-navy-dark: rgba(41, 48, 55, 1);
 $color-fraise: rgb(230, 77, 128);
+$color-vgdc-bg: #36416E;
+$color-sweet-bg: #3A3A52;
 
 
 // FONT VARIABLES
@@ -48,4 +50,12 @@ body {
     @media only screen and (max-width: $bp-medium) {
         grid-template-rows: min-content;
     }
+}
+
+.margin-btm-m {
+    margin-bottom: 2rem;
+}
+
+.margin-btm-l {
+    margin-bottom: 4rem;
 }

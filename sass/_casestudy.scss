@@ -1,34 +1,33 @@
-//fraise case study
+// //fraise case study
 
-.casestudy h1 {
-    margin: 0;
-    text-transform: capitalize;
-    color: rgb(230, 77, 128);
-}
+// .casestudy h1 {
+//     margin: 0;
+//     text-transform: capitalize;
+//     color: rgb(230, 77, 128);
+// }
 
-.casestudy h2 {
-    margin-top: 4rem;
-    text-transform: capitalize;
-    color: rgb(230, 77, 128);
-}
+// .casestudy h2 {
+//     margin-top: 4rem;
+//     text-transform: capitalize;
+//     color: rgb(230, 77, 128);
+// }
 
-.casestudy p {
-    line-height: 1.6;
-    margin: 1rem 0 1rem 0;
-}
+// .casestudy p {
+//     line-height: 1.6;
+//     margin: 1rem 0 1rem 0;
+// }
 
-.casestudy li {
-    line-height: 1.6;
-}
+// .casestudy li {
+//     line-height: 1.6;
+// }
 
 
-.casestudy img {
-    margin: 1em 0 1em 0;
-    width: 100%;
-}
+// .casestudy img {
+//     margin: 1em 0 1em 0;
+//     width: 100%;
+// }
 
 .casestudy-img {
-    margin: 1em 0 1em 0;
     width: 100%;
 }
 
@@ -79,20 +78,32 @@
     border: 1px solid $color-fraise;
 }
 
-.blue{
-    color: $color-blue !important; 
+.sweetodonut-bg {
+    background-color: $color-sweet-bg !important;
 }
 
+.fraise-bg {
+    color: $color-black !important;
+    background-color: $color-grey-bg !important;
+}
+
+
 //new casestudy code
+
+.header__img {
+    margin-bottom: 4rem;
+    width: 100%;
+}
 
 .casestudy {
     grid-row: 1 / -1;
     grid-column: 3 / 7;
-    padding: 8rem 8rem;
-    font-size: 1.5rem;
-    background-color: $color-grey-bg;
+    font-size: 1.7rem;
+    background-color: $color-vgdc-bg;
     width: 100%;
     height: 100%;
+    color: white;
+    line-height: 150%;
 
     @media only screen and (max-width: $bp-medium) {
         grid-row: 2 / -1;
@@ -103,11 +114,45 @@
         padding: 3rem;
     }
 
+    &__content {
+        padding: 2rem 6rem;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        margin-top: 7rem;
+    }
+
+    &__text {
+        margin-top: 2rem;
+
+    }
+
     &__subheading {
-        color: $color-black;
-        font-size: 1.8rem;
-        font-weight: 500;
-        text-decoration: underline;
+        color: $color-white;
+        font-size: 2rem;
+        font-weight: 600;
         margin-top: 3rem;
     }
+
+    &__link {
+        color: $color-white;
+    }
+}
+
+.columns-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-1of2 {
+    width: 45%;
+}
+
+.column-2of2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
