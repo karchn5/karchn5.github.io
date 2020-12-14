@@ -1,123 +1,95 @@
 .projects {
-    grid-row: 1 / -1;
-    grid-column: 3 / 7;
-
-
-    background-color: $color-grey-bg;
-    display: grid;
-    grid-template-rows: repeat(5, 50vh);
-    justify-items: center;
-    align-items: center;
-    
-
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-
-    @media only screen and (max-width: $bp-medium) {
-        grid-row: 2 / -1;
-        grid-column: 1 / -1;
-
-        grid-template-rows: repeat(5, 40vh);
-    }
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
 }
-
 .project {
-    width: 65%;
-    box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.25);
-    border-radius: .8rem .8rem .8rem .8rem;
 
-    @media only screen and (max-width: $bp-medium) {
-        width: 90%;
-    }
-    @media only screen and (max-width: $bp-small) {
-        width: 95%;
+    position: relative;
+    display: grid;
+    grid-template-columns: $content-grid;
+    @media screen and (min-width: 900px) {
+        grid-template-columns: $content-grid-big;
     }
 
+    background-color: $color-light-bg;
+    color: $color-black;
 
     &__content {
-        position: relative;
+        grid-column: 2 / -2;
+        padding: 7rem 0 10rem;
     }
 
-    &__text {
-        position: absolute;
-        margin-left: 50%;
-        flex-direction: column;
-        top: 50%;
-        transform: translateY(-50%);
-        color: $color-white;
-        padding-right: 2.5rem;
+    &__name {
+        font-family: $font-primary;
+        font-size: 8rem;
+        font-weight: 400;
 
-        @media only screen and (max-width: $bp-medium) {
-            margin-left: 50%;
-        }
-    
+        // @media screen and (min-width: 490px) {
+        //     font-size: 8rem;
+        // }
     }
 
     &__title {
-        font-weight: 600;
-        font-size: 2.4rem;
-        margin-bottom: 2rem;
-
-        @media only screen and (max-width: $bp-small) {
-            font-size: 2rem;
-        }
-    }
-
-    &__sub {
-        font-weight: 200;
-        font-size: 1.2rem;
-        margin-bottom: 4rem;
-
-        @media only screen and (max-width: $bp-small) {
-            margin-bottom: 3rem;
-        }
+        font-size: 2.25rem;
+        color: $color-pink;
+        font-weight: 300;
+        letter-spacing: .05rem;
     }
 
     &__img {
-        max-width: 100%;
-        border-radius: .8rem .8rem 0 0;
+        width: 100%;
     }
 
-    &__bottom {
-        background-color: white;
-        padding: 1.5rem;
-
-        display: flex;
-        align-items: center;
-        border-radius: 0 0 .8rem .8rem;
-    }
-
-    &__tags {
-        color: $color-greyblue;
-        font-size: 1.2rem;
-    }
-
-    &__button {
-        color: $color-white;
-        text-decoration: none;
-        background-color: $color-navy-dark;
-        padding: 1rem 2rem;
-        border-radius: 2rem;
-        border: 1px solid $color-white;
-        font-size: 1.2rem;
-
-
+    &__text {
+        font-size: 1.6rem;
+        line-height: 18.5px;
+        letter-spacing: .05rem;
     }
 }
 
-#tag-icon {
-    height: 1.5rem;
-    margin-right: .5rem;
-    opacity: 50%;
-}
+.projectdark {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
 
-.project:hover {
-    transform: scale(1.05);
-    transition: transform .75s;
-}
+    position: relative;
+    display: grid;
+    grid-template-columns: $content-grid;
+    @media screen and (min-width: 900px) {
+        grid-template-columns: $content-grid-big;
+    }
 
-.project__button:hover {
-    color: $color-black;
-    background-color: $color-white;
+    background-color: $color-dark-bg;
+    color: $color-white;
+
+    &__content {
+        grid-column: 2 / -2;
+        padding: 7rem 0 10rem;
+    }
+
+    &__name {
+        font-family: $font-primary;
+        font-size: 8rem;
+        font-weight: 400;
+
+        // @media screen and (min-width: 490px) {
+        //     font-size: 8rem;
+        // }
+    }
+
+    &__title {
+        font-size: 2.25rem;
+        color: $color-pink;
+        font-weight: 300;
+        letter-spacing: .05rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 18.5px;
+        letter-spacing: .05rem;
+    }
 }

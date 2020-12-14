@@ -1,158 +1,70 @@
-// //fraise case study
-
-// .casestudy h1 {
-//     margin: 0;
-//     text-transform: capitalize;
-//     color: rgb(230, 77, 128);
-// }
-
-// .casestudy h2 {
-//     margin-top: 4rem;
-//     text-transform: capitalize;
-//     color: rgb(230, 77, 128);
-// }
-
-// .casestudy p {
-//     line-height: 1.6;
-//     margin: 1rem 0 1rem 0;
-// }
-
-// .casestudy li {
-//     line-height: 1.6;
-// }
-
-
-// .casestudy img {
-//     margin: 1em 0 1em 0;
-//     width: 100%;
-// }
-
-.casestudy-img {
-    width: 100%;
-}
-
-.center-text {
-    text-align: center;
-}
-
-.margin-bottom-med {
-    margin-bottom: 5em;
-}
-
-.limit-width {
-    max-width: 70%;
-    overflow: hidden;
-}
-
-.row {
-    margin: 0 auto;
-}
-
-.hidden {
-    display: none;
-}
-
-.column-2 {
-    display: inline-flex;
-    flex-direction: column;
-    width: 45%;
-    margin-right: 2.5em;
-}
-
-.row [class^="col-"]:not(:last-child) {
-    margin-right: 2em; }
-
-.row .col-1-of-3 {
-    width: calc((100% - 2 * 3em) / 3); 
-}
-
-.fullwidth {
-    width: 100%;
-}
-
-.fraise {
-    color: $color-fraise;
-}
-.pink {
-    color: $color-fraise;
-    border: 1px solid $color-fraise;
-}
-
-.sweetodonut-bg {
-    background-color: $color-sweet-bg !important;
-}
-
-.fraise-bg {
-    color: $color-black !important;
-    background-color: $color-grey-bg !important;
-}
-
-
-//new casestudy code
-
-.header__img {
-    margin-bottom: 4rem;
-    width: 100%;
-}
-
 .casestudy {
-    grid-row: 1 / -1;
-    grid-column: 3 / 7;
-    font-size: 1.7rem;
-    background-color: $color-vgdc-bg;
-    width: 100%;
-    height: 100%;
-    color: white;
-    line-height: 150%;
-
-    @media only screen and (max-width: $bp-medium) {
-        grid-row: 2 / -1;
-        grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+}
+.casestudy {
+    
+    &__section-light {
+    position: relative;
+    display: grid;
+    grid-template-columns: $content-grid;
+    @media screen and (min-width: 900px) {
+        grid-template-columns: $content-grid-big;
     }
 
-    @media only screen and (max-width: $bp-small) {
-        padding: 3rem;
+    background-color: $color-light-bg;
+    color: $color-dark-bg;
     }
 
+    &__section-dark {
+        position: relative;
+        display: grid;
+        grid-template-columns: $content-grid;
+        @media screen and (min-width: 900px) {
+            grid-template-columns: $content-grid-big;
+        }
+    
+        background-color: $color-dark-bg;
+        color: $color-light-bg;
+        }
+
+    
     &__content {
-        padding: 2rem 6rem;
+        grid-column: 2 / -2;
+        padding: 5rem 0 10rem;
     }
 
-    &__heading {
-        text-transform: uppercase;
-        font-size: 3.5rem;
-        margin-top: 7rem;
-    }
-
-    &__text {
-        margin-top: 2rem;
-
+    &__heading-1 {
+        font-family: $font-primary;
+        font-size: 6rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        margin-top: 5rem;
     }
 
     &__subheading {
-        color: $color-white;
-        font-size: 2rem;
-        font-weight: 600;
-        margin-top: 3rem;
+        font-family: $font-primary;
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
-    &__link {
-        color: $color-white;
+    &__text {
+        font-size: 1.8rem;
+        letter-spacing: .05rem;
+        line-height: 3rem;
+        font-weight: 300;
     }
-}
 
-.columns-2 {
-    display: flex;
-    justify-content: space-between;
-}
 
-.column-1of2 {
-    width: 45%;
-}
+    &__img {
+        width: 100%
+    }
 
-.column-2of2 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    &__img-half {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "New Website",
+  "name": "Kara's Portfolio",
   "version": "1.0.0",
-  "description": "New Website",
+  "description": "Kara's Portfolio",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",

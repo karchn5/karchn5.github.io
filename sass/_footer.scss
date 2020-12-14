@@ -1,0 +1,37 @@
+.footer {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+
+    position: relative;
+    display: grid;
+    grid-template-columns: $content-grid;
+    @media screen and (min-width: 900px) {
+        grid-template-columns: $content-grid-big;
+    }
+
+    background-color: $color-dark-bg;
+    color: $color-pink;
+
+    &__content {
+        grid-column: 2 / -2;
+        padding: 2rem 0 2rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__email {
+        font-size: 1.6rem;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.icon {
+    width: 3rem;
+    margin-right: 2rem;
+}
