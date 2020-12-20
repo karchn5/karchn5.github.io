@@ -69,11 +69,11 @@
 
 .row__section-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 
     @media screen and (min-width: 1000px) {
-        width: 50%;
+        width: 47%;
     }
 }
 

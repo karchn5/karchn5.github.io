@@ -513,6 +513,10 @@ body {
   margin: 0 auto;
 }
 
+.casestudy__link {
+  color: #ff8ba4;
+}
+
 .btn-pink {
   background-color: #ff8ba4;
   font-family: "Katibeh", cursive;
@@ -607,16 +611,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
 @media screen and (min-width: 1000px) {
   .row__section-2 {
-    width: 50%;
+    width: 47%;
   }
 }
 
