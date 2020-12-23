@@ -59,6 +59,10 @@ body {
   margin-top: 2.5rem;
 }
 
+ul {
+  margin-left: 5rem;
+}
+
 .nav {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
