@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="stylesheet" href="../sass/main.css">
+        
+        <title>Kara's Portfolio</title>
+        <link rel="icon" href="img/saplingbunbp.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+   
+    </head>
+    <body class="container">
+        <div class="nav">
+            <div class="nav__content">
+                <a href= "../index.html" class="nav__logo"><p >Kara Chen</p></a>
+                <ul class="nav__links">
+                    <li><a class="nav__link" href= "../index.html">Work</a></li>
+                    <li><a class="nav__link" href= "../about.html">About</a></li>
+                    <li><a class="nav__link" href="#" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="casestudy">
+            <div class="casestudy__section-light">
+                <div class="casestudy__content">
+                    <div>
+                        <img src="../img/piazza/piazzabanner-temp.png" alt="" class="casestudy__img mgtop-big"> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="casestudy__section-dark">
+                <div class="casestudy__content">
+                    <div>
+                        <h2 class="casestudy__heading-1">Project Overview</h2>
+                        <div class="overview mgbtm-med">
+                            <div class="overview__details">
+                                <img src="../img/zoom/time.png" alt="clock icon" class="overview__icon">
+                                <p>2 Weeks (Dec 2020)</p>
+                            </div>
+                            <div class="overview__details">
+                                <img src="../img/zoom/person.png" alt="profile icon" class="overview__icon">
+                                <p>Team of 5 | UX Researcher, UI/UX Designer</p>
+                            </div>
+                        </div>
+                        <p class="casestudy__text">Piazza is an online collaborative space for students to ask questions and receive information from their instructors and each other. Although this application is widely used by college instructors and students, its usability issues make users hesitant to fully use its features. The current mobile version contains components that make using it as a discussion forum difficult. We wanted to redesign the Piazza mobile application such that it is easy to navigate and efficiently perform the actions that users desire.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="casestudy__section-light">
+                    <div class="casestudy__content">
+                        <div>
+                            <h2 class="casestudy__heading-1">User Testing - Round 1</h2>
+                            <p class="casestudy__text">We recruited four college student participants for this user testing phase. As the main demographic of Piazza, these participants helped identify the breakdowns that different users can come across while using the mobile application.</p>
+                            <br>
+                            <p class="casestudy__text">We asked each user to perform the main tasks that Piazza is used for and had them think aloud for us to understand their thought process for each action taken. After this testing, we identified the main three usability errors for all participants:</p>
+                            <br><br>
+                            <p class="casestudy__text"><b>1) Consistency and Standards</b></p>
+                            <ul class="casestudy__text">
+                                <li>The icons are not intuitive to the users - two users were hesitant to use the icons because they did not understand what they represented
+                                </li>
+                                <li>Piazza utilizes the same design for different features which makes it difficult for users to understand their functions before use
+                                </li>
+                                <li>All users were confused with the Piazza wording at some point in their testing - Wording is ambiguous and difficult to differentiate
+                                    </li>
+                            </ul>
+                            <br>
+                            <p class="casestudy__text"><b>2) Recognition Rather than Recall
+                            </b></p>
+                            <ul class="casestudy__text">
+                                <li>It is not obvious where to find certain features such as favorites or email settings - users have to remember these locations after searching for them
+                                </li>
+                                <li>Piazza consistently utilizes the ellipsis as an indication of ‘more’ features but the features included are not obvious to the user, it isn’t labeled to aid understanding
+                                </li>
+                            </ul>
+                            <br>
+                            <p class="casestudy__text"><b>2) Visibility of System Status
+                            </b></p>
+                            <ul class="casestudy__text">
+                                <li>Actions such as creating a draft or favoriting a post do not have a confirmation or indication of where a user may find these features to return to
+                                </li>
+                                <li>When a user uses the search function without results, there are no next steps indicated to help the user find what they need
+                                </li>
+                            </ul>
+                            <br><br>
+                            <p class="casestudy__text">Considering these main usability errors, <b>we decided that users most need assistance navigating through the application and understanding the actions available to them. </b>Focussing on these improvements will enhance the application’s usability by creating a consistent system to increase user efficiency and comprehension.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="casestudy__section-dark">
+                    <div class="casestudy__content">
+                        <div>
+                            <h2 class="casestudy__heading-1">Redesign Component</h2>
+                            <p class="casestudy__text">The single component that would have the greatest effect on the issues described previously was decided to be the ellipsis icon that is present on most screens of the application.
+                            </p>
+                            <br>
+                            <p class="casestudy__text mgbtm-med">Ellipsis icon (...) is inconsistent and unintuitive in what settings it controls since its function changes depending on the page that it is on.
+                        
+                            </p>
+                            <img src="../img/piazza/ellipsis1.png" alt="" class="casestudy__img-small">
+                            <br>
+                            <p class="casestudy__text mgtop-med">We compiled the difficulties with the ellipsis icon that all users struggles with during user testing to aid our redesign of the component:</p>
+                            <p class="casestudy__text mgtop-med"><b class = "emphasize">1) Avoids using the ellipsis icon</b></p>
+                            <!-- <ul class="casestudy__text"></ul> -->
+                            <p class="casestudy__text">Upon being asked to follow a post, two participants did not choose the ellipsis button and instead clicked the star which allows a user to favorite the post. It is not obvious to the user that they must click on the ellipsis to find more options.
+                            </p>
+                            <br>
+                            <p class="casestudy__text"><b class = "emphasize">2) Uses the ellipsis icon as the last option</b><br>One participant repeatedly used the ellipsis for features that they couldn’t find on the main screens as the backup option. The ellipsis icon changes functionality on each page and acts as a general location for extra features. These features aren’t clearly indicated to be accessible by this icon and leaves the user to guess what it does.
+                            </p>
+                            <br>
+                            <p class="casestudy__text"><b class = "emphasize">3) Unable to remember the features in the ellipsis icon</b><br>One participant had a tough time remembering all the options in the ellipsis menu and would click on it multiple times to check if they missed something.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="casestudy__section-light">
+                    <div class="casestudy__content">
+                        <div>
+                            <h2 class="casestudy__heading-1">Competitive Analysis</h2>
+                            <p class="casestudy__text">We analyzed the strengths and weaknesses of three different applications and their solutions to usability issues of navigation and user action. From these analyses, we identified several opportunities that could assist the improvement of the Piazza app when implemented to the design.</p>
+                            <p class="casestudy__subheading">Instagram</p>
+                            <div class="casestudy__section-row">
+                                <img src="../img/piazza/instacomp.png" alt="" class="casestudy__img-flex">
+                                <br>
+                                <div class="pdlft-small mgtop-med">
+                                    <p class="casestudy__text"><b>Strengths</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>Bottom navigation is easier for users to find desired pages</li>
+                                        <li>Icons are unique to their function to avoid guessing</li>
+                                    </ul>
+                                    <br>
+                                    <p class="casestudy__text"><b>Weaknesses</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>Potential for too many icons that can confuse the user</li>
+                                        <li>Icons are not labeled</li>
+                                    </ul>
+                                    <br>
+                                    <p class="casestudy__text"><b>Opportunities</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>The Piazza ellipsis icon can be changed to various unique icons in consistent locations</li>
+                                        <li>A secondary menu icon can present the user general settings along with the primary navigation bar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="casestudy__subheading">Canvas</p>
+                            <div class="casestudy__section-row">
+                                <img src="../img/piazza/canvascomp.png" alt="" class="casestudy__img-flex">
+                                <br>
+                                <div class="pdlft-small">
+                                    <p class="casestudy__text"><b>Strengths</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>Bottom navigation bar to reach the most relevant screens</li>
+                                        <li>Labeled icons to increase user understanding</li>
+                                    </ul>
+                                    <br>
+                                    <p class="casestudy__text"><b>Weaknesses</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>Limited space for limited icons</li>
+                                        <li>Lack of efficient search function</li>
+                                    </ul>
+                                    <br>
+                                    <p class="casestudy__text"><b>Opportunities</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>A bottom navigation would allow the user to access primary pages with specified functions</li>
+                                        <li>Features can be organized into consistent locations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="casestudy__subheading">Slack</p>
+                            <div class="casestudy__section-row">
+                                <img src="../img/piazza/slackcomp.png" alt="" class="casestudy__img-flex">
+                                <br>
+                                <div class="pdlft-small mgtop-med">
+                                    <p class="casestudy__text"><b>Strengths</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>Floating action button is intuitive</li>
+                                        <li>Conventional and unique icons</li>
+                                        <li>Bottom nav bar with labeled icons</li>
+                                    </ul>
+                                    <br>
+                                    <p class="casestudy__text"><b>Weaknesses</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>Low contrast between the components - difficult to see buttons for some users</li>
+                                    </ul>
+                                    <br>
+                                    <p class="casestudy__text"><b>Opportunities</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>Since Slack’s channel information is similar to Piazza’s course information, the info icon may be a solution to users having trouble finding the course information page</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="casestudy__section-dark">
+                    <div class="casestudy__content">
+                        <div>
+                            <h2 class="casestudy__heading-1">UI Sketches</h2>
+
+                            <p class="casestudy__text mgbtm-med">
+                                Utilizing the data from our user research and our competitive analysis, we created several UI sketches of an improved Piazza app focussed on navigation and icon placement for ease of use and understanding.
+                            </p>
+
+                            <img src="../img/piazza/sketches.png" alt="ui sketches" class="casestudy__img">
+
+                            <p class="casestudy__text"></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="casestudy__section-light">
+                    <div class="casestudy__content">
+                        <div>
+                            <h2 class="casestudy__heading-1">High Fidelity Prototypes</h2>
+
+                            <p class="casestudy__text mgbtm-big">
+                                We designed two prototypes based on two different approaches: a task bar and a navigation bar. We also experimented with different icons for each prototype.
+                            </p>
+                            <p class="casestudy__subheading">Prototype #1 - Task Bar</p>
+                            <p class="casestudy__text mgbtm-small">
+                                This prototype utilizes a combination of a bottom navigation and an task bar that adapts to the present screen.
+                            </p>
+                            <ul class="casestudy__text mgbtm-med">
+                                <li>All screen relevant actions are accessible by the task bar to reveal possible actions ot the user</li>
+                                <li> Icons are accompanied by unique label to increase user confidence and understanding</li>
+                            </ul>
+                            <iframe class="" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FyMo6Twapi9L5px7mywAYBU%2FPiazza-Redesign%3Fnode-id%3D13%253A42%26scaling%3Dscale-down" allowfullscreen></iframe>
+                            
+                            <p class="casestudy__text mgbtm-big mgtop-med"><b>The goal of this prototype was to help the user understand the possible actions to be taken throughout the app instead of hiding them in the ellipsis icon like on the original design.</b> It makes navigation through the app more consistent and possible actions more clear.
+                            </p>
+                            
+                            <p class="casestudy__subheading">Prototype #2 - Navigation Bar</p>
+                            <p class="casestudy__text mgbtm-small">
+                                This prototype utilizes a single navigation bar throughout the application.
+                            </p>
+                                <ul class="casestudy__text mgbtm-med">
+                                    <li> Floating action buttons are obvious to the user for efficient performance</li>
+                                    <li>Features of the ellipsis icon can now be found elsewhere on the screen as more relevant icons or buttons</li>
+                                    <li>Dropdown filter demonstrates its function and current system status</li>
+                                </ul>
+                            
+                                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FhG7Z1TGFrQkBuT9amZIycF%2FPiazza-Redesign-Copy%3Fnode-id%3D3%253A1%26viewport%3D760%252C203%252C0.07601168006658554%26scaling%3Dscale-down" allowfullscreen></iframe>
+
+                            <p class="casestudy__text mgtop-med"><b>The goal of this prototype was to create a consistent and reliable system that is familiar and intuitive to the user. Navigation and actions are more obvious by maintaining both location and function.</b> 
+                            </p>
+                       
+                            <!-- <img src="../img/piazza/sketches.png" alt="ui sketches" class="casestudy__img"> -->
+
+                            <p class="casestudy__text"></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="casestudy__section-dark">
+                    <div class="casestudy__content">
+                        <div>
+                            <h2 class="casestudy__heading-1">User Testing: Round 2</h2>
+
+                            <p class="casestudy__text mgbtm-small">
+                                We conducted user testing on our high fidelity prototypes in order to assess the redesigns' breakdowns and successes. 
+                            </p>
+                            <p class="casestudy__text mgbtm-big">We observed four users while they performed the same tasks on the two diffrent prototypes. By doing so, we were able to compare the usability of each prototype to aid our final recommendations for an optimized component for Piazza.</p>
+
+                            <p class="casestudy__subheading ">Prototype #1 - Task Bar</p>
+                            <div class="casestudy__section-row mgbtm-big">
+                                <img src="../img/piazza/usertest2-1.png" alt="" class="casestudy__img-flex">
+                                <br>
+                                <div class="pdlft-small mgtop-med">
+                                    <p class="casestudy__text"><b>Successes</b></p>
+                                    <ul class="casestudy__text mgbtm-med">
+                                        <li>The bottom task bar made it obvious which actions were available on each page - user<b> liked that they didn’t have to search for buttons </b>
+                                        <li>Icon labels made users more confident in their button presses</li>
+                                        <li> Adding icons for functions that did not previously have icons made the app design itself feel more uniform
+                                        </li>
+                                    </ul>
+                                    <p class="casestudy__text"><b>Breakdowns</b></p>
+                                    <ul class="casestudy__text mgbtm-med">
+                                        <li>The changing navigation bar made it confusing going from page to page - <b>user was not sure what icon would be on the task bar for each page</b>
+                                        <li>The course page icon and label was ambiguous, a user thought that it might return them to the previous course page rather than course information</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <p class="casestudy__subheading">Prototype #2 - Navigation Bar</p>
+                            <div class="casestudy__section-row mgbtm-big">
+                                <img src="../img/piazza/usertest2-2.png" alt="" class="casestudy__img-flex">
+                                <br>
+                                <div class="pdlft-small mgtop-med">
+                                    <p class="casestudy__text"><b>Successes</b></p>
+                                    <ul class="casestudy__text mgbtm-med">
+                                        <li>Consistent navigation bar was familiar to users and increased ease of use</li>
+                                        <li>The floating icon were appealing and easy to understand</li>
+                                        <li>Dropdown Filter <b>increased user selection speed</b> - One participant liked that you can always see which filter is active</li>
+                                    </ul>
+                                    <p class="casestudy__text"><b>Breakdowns</b></p>
+                                    <ul class="casestudy__text mgbtm-med">
+                                        <li>Buttons and icons differ in location and may require scanning by user
+                                        <li>Usage of ellipsis on a single page was still ambigious to the user - issue similar to original design</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+
+                            <p class="casestudy__subheading">Lessons Learned</p>
+                            <p class="casestudy__text"></p>
+                            <ul class="casestudy__text mgbtm-med">
+                                <li>Users prefer consistency within an application, meaning most components should not change from page to page
+                                </li>
+                                <li>Having icons that are related to its functionality yields to higher recognizability and allows user to complete their tasks in an easier manner
+                                </li>
+                                <li>Explicitly naming and showing options are appealing to users since they are able to immediately see their options and therefore more easily complete tasks</li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="casestudy__section-light">
+                    <div class="casestudy__content">
+                        <div>
+                            <h2 class="casestudy__heading-1">Design Recommendations</h2>
+
+                            <p class="casestudy__text">Our final recommendations would be to add a <b>bottom navigation bar that is consistent all throughout the application.</b> By doing so, users will have a reliable system to find or return to their desired page. In addition to a bottom navigation bar, there should also be an <b>implementation of more intuitive icons</b> that allow the user to immediately recognize the function of the icon. These icons should also have distinct labels to prevent any ambiguity. A filter dropdown is also recommended on the course posts page to help the user identify the usable filters and effectively sort their posts.</p>
+                            <p class="casestudy__text"></p>
+
+                            <h2 class="casestudy__heading-1">Personal Reflection</h2>
+                            <p class="casestudy__text">Throughout this project, I had the pleasure of working with four other wonderful designers and <b>loved the experience of an expidited design.</b> With only two weeks at hand, we were able to deeply analyze and user test the Piazza application and develop solutions to the selected usability issue. This project cemented my belief in the signifance of having a thourough plan at the beginning of the process. <b>I am very proud of our team's efficiency and am excited for another opportunity in the future to push pass the limitations presented to me!</b></p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer">
+                    <div class="footer__content">
+                        <div class="footer__icons">
+                            <a href="#" target="_blank"><img class="icon" src="../img/icons/Vector.png" alt="Instagram"></a>
+                            <a href="https://www.linkedin.com/in/karaachen/" target="_blank"><img  class="icon"src="../img/icons/Vector-1.png" alt="LinkedIn"></a>
+                            <a href="https://dribbble.com/aishkara/shots" target="_blank"><img class="icon" src="../img/icons/Vector-2.png" alt="Dribble"></a>
+                        </div>
+                        <p class="footer__email">karchn5@gmail.com</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>
