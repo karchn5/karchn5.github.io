@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-
+        <script src="../app.js"></script>
    
     </head>
     <body class="container">
@@ -29,7 +29,7 @@
         </div>
         <div class="casestudy">
             <div class="casestudy__section-light">
-                <div class="casestudy__content">
+                <div class="casestudy__content fade-in">
                     <div>
                         <img src="../img/zoom/zoom-header.png" alt="" class="casestudy__img mgtop-big"> 
                     </div>
@@ -38,7 +38,7 @@
 
             <div class="casestudy__section-dark">
                 <div class="casestudy__content">
-                    <div>
+                    <div class="hidden section">
                         <h2 class="casestudy__heading-1">Project Overview</h2>
                         <div class="overview mgbtm-med">
                             <div class="overview__details">
@@ -55,7 +55,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="hidden section">
                         <h2 class="casestudy__heading-1">Background</h2>
                         <p class="casestudy__text">
                             Younger K-12 students are at a great disadvantage when learning remotely as they may struggle with the limitations of collaborating online.
@@ -79,13 +79,14 @@
 
             <div class="casestudy__section-light">
                 <div class="casestudy__content">
-                    <div>
+                    <div class="hidden section">
                         <h2 class="casestudy__heading-1">User Research</h2>
                         <p class="casestudy__text">Through user research I wanted to discover the main applications that young students use for remote learning and the most significant issue that is arising while they use those applications. I used two research methods: a survey and interviews.
                         </p>
                     </div>
 
-                    <div class="mgbtm-med">
+                    <div class="hidden section">
+                    <div class="mgbtm-med " >
                         <h2 class="casestudy__subheading">Survey - 33 Participants</h2>
                         <p class="casestudy__text">I conducted a survey to discover the online tools students are using for remote learning, their pain points about those tools, and what they believe the tools are missing or could have. This survey was shared online and requested responses from teachers, parents, and older siblings about their students’ experiences with remote learning. However, responses were accepted from anyone which resulted in a majority of responses from college students.</p>
                     </div>
@@ -97,8 +98,9 @@
                         <div class="row__section-2">
                         <img src="../img/zoom/bar.png" alt="" class="row__img mgtop-small"></div>
                     </div>
+                    </div>
 
-                    <div>
+                    <div class="hidden section">
                         <h2 class="casestudy__subheading">Interviews - 3 Participants</h2>
                         <p class="casestudy__text">I interviewed three participants, <b>two middle school students and one college student.</b> Although I was not focused on Zoom at this point, all interviewees happened to utilize Zoom as their primary application. I asked them to describe their typical day with remote learning, which features of the app they use, what they like and dislike about the tool, how remote learning compares to regular school and what might improve their experience.</p>
                         <p class="casestudy__text"><br>From my interviews, I identified two major concerns of students while participating during online class and communicating with other students and teachers:
@@ -114,7 +116,7 @@
             </div>
 
             <div class="casestudy__section-dark">
-                <div class="casestudy__content">
+                <div class="casestudy__content hidden section">
                     <div>
                         <h2 class="casestudy__heading-1">Competitive Audit</h2>
                         
@@ -132,7 +134,7 @@
             </div>
 
             <div class="casestudy__section-light">
-                <div class="casestudy__content">
+                <div class="casestudy__content hidden section">
                     <div>
                         <h2 class="casestudy__heading-1">User Flows</h2>
                         <p class="casestudy__text mgbtm-med">All user flows begin with the same entry point of opening the Zoom app or clicking on a Zoom link and entering a meeting. Joining a meeting is the first step necessary to use the features within a meeting
@@ -166,7 +168,7 @@
                 </div>
 
                 <div class="casestudy__section-dark">
-                    <div class="casestudy__content">
+                    <div class="casestudy__content hidden section">
                         <div>
                             <h2 class="casestudy__heading-1">UI Sketches</h2>
 
@@ -204,36 +206,38 @@
             <div class="casestudy__section-light">
                 <div class="casestudy__content">
                     <div>
-                        <h2 class="casestudy__heading-1">Low Fidelity Prototype</h2>
-                        <p class="casestudy__text">My low-fidelity prototype was designed based on the previous user flows. This prototype will allow users to use the raise hand function, pin messages, and send photos from their phones. The basic layout of the prototype differs only slightly from the original ui sketches, but the functionality of each feature is more thought out.
-                        </p>
+                        <div class="hidden section">
+                            <h2 class="casestudy__heading-1">Low Fidelity Prototype</h2>
+                            <p class="casestudy__text">My low-fidelity prototype was designed based on the previous user flows. This prototype will allow users to use the raise hand function, pin messages, and send photos from their phones. The basic layout of the prototype differs only slightly from the original ui sketches, but the functionality of each feature is more thought out.
+                            </p>
+                        </div>
 
-                        <img src="../img/zoom/lowfidelityall.png" alt="" class="casestudy__img"> 
+                        <img src="../img/zoom/lowfidelityall.png" alt="" class="casestudy__img hidden section"> 
 
-                            <div class="videoContainer mgtop-med">
+                            <div class="videoContainer mgtop-med hidden section">
                                 <iframe class="align-center responsive-iframe"  src="https://drive.google.com/file/d/1WMa9YR0q4vSESe6kEjKdFTcvYKyRR8OJ/preview" frameborder="0" allow="autoplay" allowfullscreen autoplay></iframe>
                             </div>
 
-                        <p class="casestudy__text"><br>
-                            For the <b>participation button</b>, there is a hand icon on the top left corner instead of text indicating that the user is raising their hand. The user is able to ‘put their hand down’ by clicking the x by the raised hand. 
-                            
-                        </p>
-                        <p class="casestudy__text"><br>
-                            The <b>pinned message feature</b> is basically the same from the ui sketch, except there is a pin icon next to the pinned massage. Clicking this again will remove the message from the pinned list. 
+                        <div class="<hidden section">
+                            <p class="casestudy__text"><br>
+                                For the <b>participation button</b>, there is a hand icon on the top left corner instead of text indicating that the user is raising their hand. The user is able to ‘put their hand down’ by clicking the x by the raised hand. 
+                                
+                            </p>
+                            <p class="casestudy__text"><br>
+                                The <b>pinned message feature</b> is basically the same from the ui sketch, except there is a pin icon next to the pinned massage. Clicking this again will remove the message from the pinned list. 
 
-                            
-                        </p>
-                        <p class="casestudy__text"> <br>
-                            For the <b>photo upload feature</b>, I reconsidered the current design for uploading files and added my feature to match. The file button will remain the same, but there is an option to upload from the computer or from the phone. Choosing the phone method is the main functionality of my additional feature. The user will be notified on their phone to upload a picture and it will transfer to their computer zoom application. Each option presented to the user is placed based on which function will be used most. I decided not to continue with the screenshot or the saved message functions because there are other options to do so.
-                            
-                            
-                        </p>
+                                
+                            </p>
+                            <p class="casestudy__text"> <br>
+                                For the <b>photo upload feature</b>, I reconsidered the current design for uploading files and added my feature to match. The file button will remain the same, but there is an option to upload from the computer or from the phone. Choosing the phone method is the main functionality of my additional feature. The user will be notified on their phone to upload a picture and it will transfer to their computer zoom application. Each option presented to the user is placed based on which function will be used most. I decided not to continue with the screenshot or the saved message functions because there are other options to do so.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="casestudy__section-dark">
-                <div class="casestudy__content">
+                <div class="casestudy__content hidden section">
                     <div>
                         <h2 class="casestudy__heading-1">User Testing - Phase 1</h2>
                         <p class="casestudy__text">I tested my prototype on three college students. Although this is not my target audience, their experience with zoom is still valuable to improving the application. I was able to safely perform user testing in person which helped me better understand their actions and choices while they interacted with my prototype.<br>
@@ -258,43 +262,44 @@
             <div class="casestudy__section-light">
                 <div class="casestudy__content">
                     <div>
-                        <h2 class="casestudy__heading-1">High Fidelity Prototype</h2>
+                        <h2 class="casestudy__heading-1 hidden section">High Fidelity Prototype</h2>
                         <p class="casestudy__text">
                         </p>
-                        <img src="../img/zoom/highfidelityall.png" alt="" class="casestudy__img"> 
+                        <img src="../img/zoom/highfidelityall.png" alt="" class="casestudy__img hidden section"> 
 
-                            <div class="videoContainer mgtop-med">
+                            <div class="videoContainer mgtop-med hidden section">
                                 <iframe class="align-center responsive-iframe" src="https://drive.google.com/file/d/1drR4MkM3xKgl0c38fR_SBSSGKT2G9i5L/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
 
-                      
-                        <p class="casestudy__text"><br>Changes made from the low-fidelity prototype to the high-fidelity prototype were not drastic, but have <b>increased understanding and efficiency for the features introduced.</b> I took into consideration the need for confirmation while features are being used. I needed to make it <b>obvious when features are currently active</b> so users don’t think otherwise. These are the changes I made from the user testing results: <br>
-                            <p class="casestudy__text mgtop-med">
-                                <b>1) Participation Button</b>
+                        <div class="hidden section">
+                            <p class="casestudy__text"><br>Changes made from the low-fidelity prototype to the high-fidelity prototype were not drastic, but have <b>increased understanding and efficiency for the features introduced.</b> I took into consideration the need for confirmation while features are being used. I needed to make it <b>obvious when features are currently active</b> so users don’t think otherwise. These are the changes I made from the user testing results: <br>
+                                <p class="casestudy__text mgtop-med">
+                                    <b>1) Participation Button</b>
+                                        <ul class="casestudy__text">
+                                            <li>The “reactions” button is now labeled “interactions”</li>
+                                            <li>“Interaction” button has a smiley face and hand icon</li>
+                                            <li>The indication for raising your hand now has text as well</li>
+                                        </ul>
+                                    <br>
+                                    <p class="casestudy__text" ><b>2) Pinning Message</b></p>
                                     <ul class="casestudy__text">
-                                        <li>The “reactions” button is now labeled “interactions”</li>
-                                        <li>“Interaction” button has a smiley face and hand icon</li>
-                                        <li>The indication for raising your hand now has text as well</li>
+                                        <li>Blue pin icon when message pinned
+                                            (Both in general chat and at the top pinned section)
+                                            </li>
+                                        <li>Confirmation when unpinning a message</li>
                                     </ul>
-                                <br>
-                                <p class="casestudy__text" ><b>2) Pinning Message</b></p>
-                                <ul class="casestudy__text">
-                                    <li>Blue pin icon when message pinned
-                                        (Both in general chat and at the top pinned section)
-                                        </li>
-                                    <li>Confirmation when unpinning a message</li>
-                                </ul>
-                                <br>
-                                <p class="casestudy__text"><b>3) Upload Photo</b></p>
-                                <ul class="casestudy__text">
-                                    <li>Send button added to messages</li>
-                                    <li>Switched take picture and photo library on phone screen</li>
-                                    <li>Meeting name and number shown on phone screen before uploading</li>
-                                    <li>File name/type/size shown before sending to chat</li>
-                                    <li>Confirmation when removing uploaded file</li>
-                                </p>
-                            </ol>
-                        </p>
+                                    <br>
+                                    <p class="casestudy__text"><b>3) Upload Photo</b></p>
+                                    <ul class="casestudy__text">
+                                        <li>Send button added to messages</li>
+                                        <li>Switched take picture and photo library on phone screen</li>
+                                        <li>Meeting name and number shown on phone screen before uploading</li>
+                                        <li>File name/type/size shown before sending to chat</li>
+                                        <li>Confirmation when removing uploaded file</li>
+                                    </p>
+                                </ol>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,15 +309,15 @@
         <div class="casestudy__section-dark">
             <div class="casestudy__content">
                 <div>
-                    <h2 class="casestudy__heading-1">User Testing - Phase 2</h2>
-                    <p class="casestudy__text">
+                    <h2 class="casestudy__heading-1 hidden section">User Testing - Phase 2</h2>
+                    <p class="casestudy__text hidden section">
                         I presented my high fidelity prototype and its features to three participants: a roommate and two classmates. I asked them to rate the usability of each feature and what aspects could use improvement. 
                         <br><br>The participation button and pinning messages features were rated with high ease of use and understanding, but the photo upload was less intuitive and received mixed ratings. A participant expressed concerns that the feature might be "confusing when split into 2 devices." Users might be unfamiliar with cross-device features and be hesitant to use it. <b>The feature needs to clearly guide the user through its functions and provide several confirmations to avoid this confusion.</b>
                         <br><br>
                         I showed my participants two alternative screens from the original design and asked them to state their preferrence and why:
                     </p>
 
-                        <div class="row mgtop-med">
+                        <div class="row mgtop-med hidden section">
                             <div class="row__section-2">
                                 <p class="row__label">Mobile Photo Upload Screens</p>
                                 <img src="../img/zoom/altscreen1.png" alt="" class="row__img">
@@ -321,7 +326,7 @@
                                 <p class="row__label">File Send in Chat Screen</p>
                                 <img src="../img/zoom/altscreen2.png" alt="" class="row__img"></div>
                         </div>
-                    <p class="casestudy__text">
+                    <p class="casestudy__text hidden section">
                         <br>
                         All three participants chose the same screens as their preference. For the <b>mobile photo upload screens</b>, the alternative screen that shows the picture in full view was chosen and commented to be “more intuitive and familiar.” For <b>the file send in chat screen</b>, the original screen with the file inserted into the text form of the messaging section was the preferred since it simply "makes sense." Having the file within the text form helps the user understand that it can be sent with a message.
 <!-- 
@@ -339,9 +344,11 @@
         <div class="casestudy__section-light">
             <div class="casestudy__content">
                 <div>
+                    <div class="hidden section">
                     <h2 class="casestudy__heading-1">Prototype Improvements</h2>
                     <img src="../img/zoom/uploadscreens1.png" alt="" class="casestudy__img mgtop-small"> 
-                    <p class="casestudy__text">
+                    </div>
+                    <p class="casestudy__text hidden section">
                         <br>As I redesigned the mobile upload screens, I wanted to focus on <b>guiding the user with action buttons.</b> By adding more contrast and using Zoom's main color blue for the action buttons, they attracted the user's attention. I also relocated the ‘take picture’ to the top of the buttons and both the ‘upload’ and ‘done’ buttons to the bottom right. This will help indicate the ‘next step’ of the process for the user.
                     </p>
                     
@@ -350,7 +357,7 @@
         </div>
 
         <div class="casestudy__section-dark">
-            <div class="casestudy__content">
+            <div class="casestudy__content hidden section">
                 <div>
                     <h2 class="casestudy__heading-1">Final Design</h2>
                     <!-- <img src="../img/zoom/uploadscreens.png" alt="" class="casestudy__img mgtop-small">  -->
@@ -362,7 +369,7 @@
         </div>
 
         <div class="casestudy__section-light">
-            <div class="casestudy__content">
+            <div class="casestudy__content hidden section">
                 <div>
                     <h2 class="casestudy__heading-1">Reflection</h2>
                     <p class="casestudy__text">
@@ -393,6 +400,6 @@
             </div>
         </div>
 
-
+        <script src="../app.js"></script>
     </body>
 </html>
