@@ -76,7 +76,11 @@ ul {
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   grid-column: 1 / -1;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 100;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10% (1fr)[4] 10%;
