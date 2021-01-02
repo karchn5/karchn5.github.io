@@ -2,22 +2,34 @@
     background-color: $color-pink;
     font-family: $font-primary;
     color: $color-dark-bg;
-    padding: 0rem 1.5rem 1rem 1.5rem;
+    padding:0rem 1.5rem 1rem 1.5rem;
+    // padding: 1rem;
     text-decoration: none;
     font-size: 2.5rem;
     text-align: center;
     font-weight: 400;
 }
 
+.btn-pink:hover {
+    background-color: $color-white;
+    color: $color-pink;
+}
+
 .btn-dark {
     background-color: $color-dark-bg;
     font-family: $font-primary;
     color: $color-pink;
-    padding: 0rem 1.5rem 1rem 1.5rem;
+    padding:0rem 1.5rem 1rem 1.5rem;
+    // padding: 1rem;
     text-decoration: none;
     font-size: 2.5rem;
     text-align: center;
     font-weight: 400;
+}
+
+.btn-dark:hover {
+    background-color: $color-pink;
+    color: $color-dark-bg;
 }
 
 .videoContainer {

@@ -60,3 +60,12 @@ body {
 
 }
 
+::-moz-selection {
+    color:white;
+    background: $color-pink;
+  }
+  
+::selection {
+    color: white;
+    background: $color-pink;
+  }

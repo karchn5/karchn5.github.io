@@ -35,6 +35,16 @@ body {
       grid-template-columns: repeat(6, 1fr);
 }
 
+::-moz-selection {
+  color: white;
+  background: #ff8ba4;
+}
+
+::selection {
+  color: white;
+  background: #ff8ba4;
+}
+
 .mgbtm-small {
   margin-bottom: 1rem;
 }
@@ -131,16 +141,12 @@ ul {
 .nav__link {
   text-decoration: none;
   font-size: 1.6rem;
-  padding: 1rem;
-  margin-left: .2rem;
+  padding-left: 1.5rem;
   color: #ff8ba4;
   letter-spacing: .07rem;
 }
 
 .nav__link:hover {
-  text-decoration: none;
-  font-size: 1.6rem;
-  padding: 1rem;
   color: white;
 }
 
@@ -572,6 +578,11 @@ ul {
   font-weight: 400;
 }
 
+.btn-pink:hover {
+  background-color: white;
+  color: #ff8ba4;
+}
+
 .btn-dark {
   background-color: #232323;
   font-family: "Katibeh", cursive;
@@ -581,6 +592,11 @@ ul {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 400;
+}
+
+.btn-dark:hover {
+  background-color: #ff8ba4;
+  color: #232323;
 }
 
 .videoContainer {

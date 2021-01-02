@@ -44,16 +44,12 @@
     &__link {
         text-decoration: none;
         font-size: 1.6rem;
-        padding: 1rem;
-        margin-left: .2rem;
+        padding-left: 1.5rem;
         color: $color-pink;
         letter-spacing: .07rem;
     }
 
     &__link:hover {
-        text-decoration: none;
-        font-size: 1.6rem;
-        padding: 1rem;
         color: $color-white;
     }
 }
