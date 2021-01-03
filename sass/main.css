@@ -407,7 +407,7 @@ ul {
 
 .projectdark__text {
   font-size: 1.6rem;
-  line-height: 3rem;
+  line-height: 150%;
   letter-spacing: .05rem;
 }
 
