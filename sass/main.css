@@ -81,6 +81,13 @@ ul {
   text-align: center;
 }
 
+.subheading {
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
 .nav {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -108,23 +115,23 @@ ul {
 
 .nav__content {
   grid-column: 2 / -2;
-  padding: 1.5rem 0 2.5rem;
+  padding: 1.5rem 0 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__logo {
   text-decoration: none;
   color: #ff8ba4;
-  font-size: 3rem;
-  font-family: "Katibeh", cursive;
+  font-size: 2.5rem;
+  font-family: "DM Serif Display", serif;
 }
 
 .nav__logo:hover {
@@ -178,21 +185,22 @@ ul {
 }
 
 .intro__name {
-  font-family: "Katibeh", cursive;
+  font-family: "DM Serif Display", serif;
   font-size: 8rem;
   font-weight: 400;
 }
 
 .intro__title {
-  font-size: 2.25rem;
+  font-size: 3rem;
   color: #ff8ba4;
   font-weight: 300;
-  letter-spacing: .05rem;
+  letter-spacing: .5rem;
+  margin-top: -7px;
 }
 
 .intro__text {
-  font-size: 1.6rem;
-  line-height: 18.5px;
+  font-size: 1.8rem;
+  line-height: 150%;
   letter-spacing: .05rem;
 }
 
@@ -332,13 +340,13 @@ ul {
 }
 
 .project__name {
-  font-family: "Katibeh", cursive;
-  font-size: 8rem;
+  font-family: "DM Serif Display", serif;
+  font-size: 6rem;
   font-weight: 400;
 }
 
 .project__title {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #ff8ba4;
   font-weight: 300;
   letter-spacing: .05rem;
@@ -350,7 +358,7 @@ ul {
 
 .project__text {
   font-size: 1.6rem;
-  line-height: 18.5px;
+  line-height: 150%;
   letter-spacing: .05rem;
 }
 
@@ -381,13 +389,13 @@ ul {
 }
 
 .projectdark__name {
-  font-family: "Katibeh", cursive;
-  font-size: 8rem;
+  font-family: "DM Serif Display", serif;
+  font-size: 6rem;
   font-weight: 400;
 }
 
 .projectdark__title {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #ff8ba4;
   font-weight: 300;
   letter-spacing: .05rem;
@@ -399,7 +407,7 @@ ul {
 
 .projectdark__text {
   font-size: 1.6rem;
-  line-height: 18.5px;
+  line-height: 3rem;
   letter-spacing: .05rem;
 }
 
@@ -503,15 +511,15 @@ ul {
 }
 
 .casestudy__heading-1 {
-  font-family: "Katibeh", cursive;
-  font-size: 6rem;
+  font-family: "DM Serif Display", serif;
+  font-size: 5rem;
   font-weight: 400;
   margin-bottom: 2rem;
   margin-top: 5rem;
 }
 
 .casestudy__subheading {
-  font-family: "Katibeh", cursive;
+  font-family: "DM Serif Display", serif;
   font-size: 4rem;
   font-weight: 400;
   margin-bottom: 2rem;
@@ -569,11 +577,11 @@ ul {
 
 .btn-pink {
   background-color: #ff8ba4;
-  font-family: "Katibeh", cursive;
+  font-family: "DM Serif Display", serif;
   color: #232323;
-  padding: 0rem 1.5rem 1rem 1.5rem;
+  padding: .5rem 1.5rem .5rem 1.5rem;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 400;
 }
@@ -585,11 +593,11 @@ ul {
 
 .btn-dark {
   background-color: #232323;
-  font-family: "Katibeh", cursive;
+  font-family: "DM Serif Display", serif;
   color: #ff8ba4;
-  padding: 0rem 1.5rem 1rem 1.5rem;
+  padding: .5rem 1.5rem .5rem 1.5rem;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 400;
 }
@@ -648,6 +656,9 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .row__section {
@@ -684,12 +695,46 @@ ul {
   }
 }
 
+.row__section-3-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .row__section-3-1 {
+    width: 33%;
+  }
+}
+
+.row__section-3-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .row__section-3-2 {
+    width: 62%;
+  }
+}
+
 .row__img {
   width: 100%;
 }
 
 .row__label {
-  font-family: "Katibeh", cursive;
+  font-family: "DM Serif Display", serif;
   text-align: center;
   font-size: 3rem;
 }
@@ -749,5 +794,56 @@ ul {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
+}
+
+.warning {
+  color: black;
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.text-link {
+  color: #ff8ba4;
+}
+
+.fade-in-side {
+  -webkit-animation: fadeInSide ease-in 1s;
+          animation: fadeInSide ease-in 1s;
+}
+
+@-webkit-keyframes fadeInSide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInSide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.about-img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: solid white 5px;
 }
 /*# sourceMappingURL=main.css.map */

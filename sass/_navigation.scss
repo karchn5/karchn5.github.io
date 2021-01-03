@@ -18,17 +18,17 @@
 
     &__content {
         grid-column: 2 / -2;
-        padding: 1.5rem 0 2.5rem;
-
+        padding: 1.5rem 0 1.5rem;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
+        
     }
 
     &__logo {
         text-decoration: none;
         color: $color-pink;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-family: $font-primary;
     }
 

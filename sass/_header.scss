@@ -24,15 +24,17 @@
     }
 
     &__title {
-        font-size: 2.25rem;
+        font-size: 3rem;
         color: $color-pink;
         font-weight: 300;
-        letter-spacing: .05rem;
+        letter-spacing: .5rem;
+        margin-top: -7px;
+        // margin-bottom: 5rem;
     }
 
     &__text {
-        font-size: 1.6rem;
-        line-height: 18.5px;
+        font-size: 1.8rem;
+        line-height: 150%;
         letter-spacing: .05rem;
     }
 
