@@ -102,7 +102,7 @@ ul {
   display: grid;
   -ms-grid-columns: 10% (1fr)[4] 10%;
       grid-template-columns: 10% repeat(4, 1fr) 10%;
-  background-color: #232323;
+  background-color: #161616;
   color: #ff8ba4;
 }
 
@@ -150,7 +150,13 @@ ul {
   font-size: 1.6rem;
   padding-left: 1.5rem;
   color: #ff8ba4;
-  letter-spacing: .07rem;
+  letter-spacing: .1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .nav__link {
+    padding-left: 2.5rem;
+  }
 }
 
 .nav__link:hover {

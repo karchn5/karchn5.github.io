@@ -13,7 +13,7 @@
         grid-template-columns: $content-grid-big;
     }
     
-    background-color: $color-dark-bg;
+    background-color: $color-darker-bg;
     color: $color-pink;
 
     &__content {
@@ -46,7 +46,12 @@
         font-size: 1.6rem;
         padding-left: 1.5rem;
         color: $color-pink;
-        letter-spacing: .07rem;
+        letter-spacing: .1rem;
+
+        @media screen and (min-width: 900px) {
+            padding-left: 2.5rem;
+        }
+        
     }
 
     &__link:hover {
