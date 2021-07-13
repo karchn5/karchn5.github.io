@@ -3,6 +3,14 @@
     grid-column: 1 / -1;
 }
 .casestudy {
+
+    &__section-full {
+        position: relative;
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: $color-dark-bg;
+
+    }
     
     &__section-light {
     position: relative;
@@ -37,17 +45,25 @@
     &__heading-1 {
         font-family: $font-primary;
         font-size: 5rem;
-        font-weight: 400;
+        font-weight: 500;
         margin-bottom: 2rem;
         margin-top: 5rem;
     }
 
     &__subheading {
         font-family: $font-primary;
-        font-size: 4rem;
-        font-weight: 400;
+        font-size: 3.5rem;
+        font-weight: 500;
         margin-bottom: 2rem;
         margin-top: 2rem;
+    }
+
+    &__subheading-2 {
+        font-family: $font-tertiary;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
     }
 
     &__text {
@@ -55,6 +71,7 @@
         letter-spacing: .05rem;
         line-height: 3rem;
         font-weight: 300;
+        line-height: 1.8;
     }
 
 

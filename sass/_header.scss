@@ -14,7 +14,7 @@
 
     &__content {
         grid-column: 2 / -2;
-        padding: 15rem 0 13rem;
+        padding: 12rem 0 12rem;
     }
 
     &__name {
@@ -24,16 +24,16 @@
     }
 
     &__title {
-        font-size: 3rem;
+        font-size: 4rem;
         color: $color-pink;
         font-weight: 300;
-        letter-spacing: .61rem;
+        letter-spacing: .44rem;
         margin-top: -7px;
         // margin-bottom: 5rem;
     }
 
     &__text {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 150%;
         letter-spacing: .05rem;
     }

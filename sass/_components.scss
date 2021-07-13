@@ -1,30 +1,36 @@
 .btn-pink {
+    
     background-color: $color-pink;
-    font-family: $font-primary;
-    color: $color-dark-bg;
-    padding:.5rem 1.5rem .5rem 1.5rem;
-    // padding: 1rem;
+    font-family: $font-tertiary;
+    color: $color-white;
+    padding:1.5rem 4rem 1.2rem 4rem;
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
+    transition: .4s;
+    border-radius: 5px;
+    // letter-spacing: .1rem;
 }
 
 .btn-pink:hover {
     background-color: $color-white;
     color: $color-pink;
+    border-color: $color-pink;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .btn-dark {
     background-color: $color-dark-bg;
-    font-family: $font-primary;
+    font-family: $font-tertiary;
     color: $color-pink;
-    padding:.5rem 1.5rem .5rem 1.5rem;
+    padding:1.2rem 2.5rem 1rem 2.5rem;
     // padding: 1rem;
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .btn-dark:hover {
@@ -51,15 +57,18 @@
 
 .overview{
     display: flex;
+    font-family: $font-tertiary;
     &__icon {
         width: 2.5rem;
         margin-right: 1rem;
     }
     &__details {
+        font-family: $font-tertiary;
         display: flex;
         font-size: 1.4rem;
         align-items: center;
         margin-right: 2rem;
+        letter-spacing: .1rem;
     }
 }
 

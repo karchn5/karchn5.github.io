@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   font-weight: 300;
   color: black;
 }
@@ -37,12 +37,12 @@ body {
 
 ::-moz-selection {
   color: white;
-  background: #ff8ba4;
+  background: #444ed3;
 }
 
 ::selection {
   color: white;
-  background: #ff8ba4;
+  background: #444ed3;
 }
 
 .mgbtm-small {
@@ -73,6 +73,14 @@ ul {
   margin-left: 5rem;
 }
 
+ol {
+  margin-left: 5rem;
+}
+
+.bold {
+  font-weight: 800;
+}
+
 .pdlft-small {
   padding-left: 4rem;
 }
@@ -82,7 +90,7 @@ ul {
 }
 
 .subheading {
-  font-family: "DM Serif Display", serif;
+  font-family: natom-pro, serif;
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 2rem;
@@ -102,8 +110,8 @@ ul {
   display: grid;
   -ms-grid-columns: 10% (1fr)[4] 10%;
       grid-template-columns: 10% repeat(4, 1fr) 10%;
-  background-color: #161616;
-  color: #ff8ba4;
+  background-color: #232323;
+  color: white;
 }
 
 @media screen and (min-width: 900px) {
@@ -129,13 +137,14 @@ ul {
 
 .nav__logo {
   text-decoration: none;
-  color: #ff8ba4;
+  color: white;
   font-size: 2.5rem;
-  font-family: "DM Serif Display", serif;
+  font-family: natom-pro, serif;
+  font-weight: 400;
 }
 
 .nav__logo:hover {
-  color: white;
+  color: #444ed3;
 }
 
 .nav__links {
@@ -149,7 +158,7 @@ ul {
   text-decoration: none;
   font-size: 1.6rem;
   padding-left: 1.5rem;
-  color: #ff8ba4;
+  color: white;
   letter-spacing: .1rem;
 }
 
@@ -160,7 +169,7 @@ ul {
 }
 
 .nav__link:hover {
-  color: white;
+  color: #444ed3;
 }
 
 .intro {
@@ -187,25 +196,25 @@ ul {
 
 .intro__content {
   grid-column: 2 / -2;
-  padding: 15rem 0 13rem;
+  padding: 12rem 0 12rem;
 }
 
 .intro__name {
-  font-family: "DM Serif Display", serif;
+  font-family: natom-pro, serif;
   font-size: 8rem;
   font-weight: 400;
 }
 
 .intro__title {
-  font-size: 3rem;
-  color: #ff8ba4;
+  font-size: 4rem;
+  color: #444ed3;
   font-weight: 300;
-  letter-spacing: .61rem;
+  letter-spacing: .44rem;
   margin-top: -7px;
 }
 
 .intro__text {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 150%;
   letter-spacing: .05rem;
 }
@@ -257,7 +266,7 @@ ul {
 
 .intro .intro__nav input:checked ~ ul {
   display: none;
-  background-color: #ff8ba4;
+  background-color: #444ed3;
   -webkit-animation: slideIn 1s;
           animation: slideIn 1s;
   -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.26);
@@ -340,22 +349,45 @@ ul {
   }
 }
 
-.project__content {
+.project__section {
   grid-column: 2 / -2;
-  padding: 7rem 0 10rem;
+  padding: 5rem 0rem 5rem;
+}
+
+.project__content-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .project__content-img {
+    width: 48%;
+  }
+}
+
+.project__content {
+  width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .project__content {
+    width: 48%;
+  }
 }
 
 .project__name {
-  font-family: "DM Serif Display", serif;
+  font-family: natom-pro, serif;
   font-size: 6rem;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 3rem;
 }
 
 .project__title {
   font-size: 2rem;
-  color: #ff8ba4;
+  color: #444ed3;
   font-weight: 300;
   letter-spacing: .05rem;
+  text-transform: uppercase;
 }
 
 .project__img {
@@ -363,7 +395,7 @@ ul {
 }
 
 .project__text {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 150%;
   letter-spacing: .05rem;
 }
@@ -395,14 +427,14 @@ ul {
 }
 
 .projectdark__name {
-  font-family: "DM Serif Display", serif;
+  font-family: natom-pro, serif;
   font-size: 6rem;
   font-weight: 400;
 }
 
 .projectdark__title {
-  font-size: 2rem;
-  color: #ff8ba4;
+  font-size: 2.8rem;
+  color: #444ed3;
   font-weight: 300;
   letter-spacing: .05rem;
 }
@@ -412,7 +444,7 @@ ul {
 }
 
 .projectdark__text {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 150%;
   letter-spacing: .05rem;
 }
@@ -428,7 +460,7 @@ ul {
   -ms-grid-columns: 10% (1fr)[4] 10%;
       grid-template-columns: 10% repeat(4, 1fr) 10%;
   background-color: #232323;
-  color: #ff8ba4;
+  color: white;
 }
 
 @media screen and (min-width: 900px) {
@@ -440,7 +472,7 @@ ul {
 
 .footer__content {
   grid-column: 2 / -2;
-  padding: 2rem 0 2rem;
+  padding: 3rem 0 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,7 +485,14 @@ ul {
 }
 
 .footer__email {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.footer__email:hover {
+  color: #444ed3;
 }
 
 .footer__icons {
@@ -467,7 +506,13 @@ ul {
 
 .icon {
   width: 3rem;
+  color: white;
+  fill: white;
   margin-right: 2rem;
+}
+
+.icon:hover {
+  fill: #444ed3;
 }
 
 .casestudy {
@@ -475,6 +520,15 @@ ul {
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
+}
+
+.casestudy__section-full {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  background-color: #232323;
 }
 
 .casestudy__section-light {
@@ -517,19 +571,27 @@ ul {
 }
 
 .casestudy__heading-1 {
-  font-family: "DM Serif Display", serif;
+  font-family: natom-pro, serif;
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 2rem;
   margin-top: 5rem;
 }
 
 .casestudy__subheading {
-  font-family: "DM Serif Display", serif;
-  font-size: 4rem;
-  font-weight: 400;
+  font-family: natom-pro, serif;
+  font-size: 3.5rem;
+  font-weight: 500;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.casestudy__subheading-2 {
+  font-family: "Muli", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .casestudy__text {
@@ -537,6 +599,7 @@ ul {
   letter-spacing: .05rem;
   line-height: 3rem;
   font-weight: 300;
+  line-height: 1.8;
 }
 
 .casestudy__img {
@@ -578,38 +641,44 @@ ul {
 }
 
 .casestudy__link {
-  color: #ff8ba4;
+  color: #444ed3;
 }
 
 .btn-pink {
-  background-color: #ff8ba4;
-  font-family: "DM Serif Display", serif;
-  color: #232323;
-  padding: .5rem 1.5rem .5rem 1.5rem;
+  background-color: #444ed3;
+  font-family: "Muli", sans-serif;
+  color: white;
+  padding: 1.5rem 4rem 1.2rem 4rem;
   text-decoration: none;
   font-size: 2rem;
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
 }
 
 .btn-pink:hover {
   background-color: white;
-  color: #ff8ba4;
+  color: #444ed3;
+  border-color: #444ed3;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .btn-dark {
   background-color: #232323;
-  font-family: "DM Serif Display", serif;
-  color: #ff8ba4;
-  padding: .5rem 1.5rem .5rem 1.5rem;
+  font-family: "Muli", sans-serif;
+  color: #444ed3;
+  padding: 1.2rem 2.5rem 1rem 2.5rem;
   text-decoration: none;
   font-size: 2rem;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .btn-dark:hover {
-  background-color: #ff8ba4;
+  background-color: #444ed3;
   color: #232323;
 }
 
@@ -635,6 +704,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Muli", sans-serif;
 }
 
 .overview__icon {
@@ -643,6 +713,7 @@ ul {
 }
 
 .overview__details {
+  font-family: "Muli", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,6 +722,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 2rem;
+  letter-spacing: .1rem;
 }
 
 .row {
@@ -740,7 +812,7 @@ ul {
 }
 
 .row__label {
-  font-family: "DM Serif Display", serif;
+  font-family: natom-pro, serif;
   text-align: center;
   font-size: 3rem;
 }
@@ -811,7 +883,7 @@ ul {
 }
 
 .text-link {
-  color: #ff8ba4;
+  color: #444ed3;
 }
 
 .fade-in-side {
