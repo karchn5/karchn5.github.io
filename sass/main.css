@@ -138,9 +138,15 @@ ol {
 .nav__logo {
   text-decoration: none;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: natom-pro, serif;
   font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+  .nav__logo {
+    font-size: 2.5rem;
+  }
 }
 
 .nav__logo:hover {
@@ -201,8 +207,14 @@ ol {
 
 .intro__name {
   font-family: natom-pro, serif;
-  font-size: 8rem;
+  font-size: 7.45rem;
   font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+  .intro__name {
+    font-size: 8rem;
+  }
 }
 
 .intro__title {
@@ -485,7 +497,7 @@ ol {
 }
 
 .footer__email {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: white;
   text-decoration: none;
   font-weight: 300;

@@ -19,8 +19,12 @@
 
     &__name {
         font-family: $font-primary;
-        font-size: 8rem;
+        font-size: 7.45rem;
         font-weight: 400;
+
+        @media screen and (min-width: 900px) {
+            font-size: 8rem;
+        }
     }
 
     &__title {
