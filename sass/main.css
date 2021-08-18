@@ -896,6 +896,13 @@ ol {
 
 .text-link {
   color: #444ed3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.text-link:hover {
+  background-color: #444ed3;
+  color: white;
 }
 
 .fade-in-side {

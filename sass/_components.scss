@@ -171,8 +171,15 @@
 
 .text-link {
     color: $color-pink;
-
+    transition: .4s;
 }
+
+.text-link:hover {
+    background-color: $color-pink;
+    color: white;
+}
+
+
 
 .fade-in-side {
     animation: fadeInSide ease-in 1s;
